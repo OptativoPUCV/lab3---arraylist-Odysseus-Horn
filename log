@@ -62,3 +62,37 @@ Fri 31 Mar 2023 05:57:34 PM UTC:
  tests:  5|3
 total_score: 30/70
 8448dd5
+Fri 31 Mar 2023 10:23:28 PM UTC: 
+ arraylist.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:56:21: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   56 |     if(i > l->size) return;
+      |                     ^~~~~~
+arraylist.c:55:7: note: declared here
+   55 | void* pop(ArrayList * l, int i){
+      |       ^~~
+arraylist.c:58:22: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   58 |     if(l->size == 0) return;
+      |                      ^~~~~~
+arraylist.c:55:7: note: declared here
+   55 | void* pop(ArrayList * l, int i){
+      |       ^~~
+arraylist.c:62:11: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   62 |       i = size + i
+      |           ^~~~
+      |           dysize
+arraylist.c:62:11: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:62:19: error: expected ‘;’ before ‘}’ token
+   62 |       i = size + i
+      |                   ^
+      |                   ;
+   63 |     }
+      |     ~              
+arraylist.c:65:9: error: ‘k’ undeclared (first use in this function)
+   65 |     for(k = i ; k < size - 1 ; k++)
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+abec09f
