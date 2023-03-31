@@ -149,3 +149,15 @@ arraylist.c:62:11: error: ‘size’ undeclared (first use in this function); di
 arraylist.c:62:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b847a9e
+Fri 31 Mar 2023 10:24:33 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:65:25: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   65 |     for(int k = i ; k < size - 1 ; k++)
+      |                         ^~~~
+      |                         dysize
+arraylist.c:65:25: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+e6b9095

@@ -59,7 +59,7 @@ void* pop(ArrayList * l, int i){
 
     if(i < 0)
     {
-      i = size + i;
+      i = l->size + i;
     }
   
     for(int k = i ; k < size - 1 ; k++)
