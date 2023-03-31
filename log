@@ -96,3 +96,28 @@ arraylist.c:65:9: error: ‘k’ undeclared (first use in this function)
 cc1: all warnings being treated as errors
 Compilation failed
 abec09f
+Fri 31 Mar 2023 10:23:42 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:62:11: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   62 |       i = size + i
+      |           ^~~~
+      |           dysize
+arraylist.c:62:11: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:62:19: error: expected ‘;’ before ‘}’ token
+   62 |       i = size + i
+      |                   ^
+      |                   ;
+   63 |     }
+      |     ~              
+arraylist.c:65:9: error: ‘k’ undeclared (first use in this function)
+   65 |     for(k = i ; k < size - 1 ; k++)
+      |         ^
+arraylist.c:72:1: error: control reaches end of non-void function [-Werror=return-type]
+   72 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c735aaa
