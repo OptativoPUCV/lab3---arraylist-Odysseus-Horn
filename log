@@ -228,3 +228,15 @@ Sat 01 Apr 2023 03:19:43 PM UTC:
  1 file changed, 1 insertion(+)
  tests:  0|0
 11ae525
+Sat 01 Apr 2023 03:19:56 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:29:45: error: dereferencing ‘void *’ pointer [-Werror]
+   29 |     printf("aumentando para ingresar %p\n", *data);
+      |                                             ^~~~~
+arraylist.c:29:45: error: invalid use of void expression
+cc1: all warnings being treated as errors
+Compilation failed
+bfbaa63
