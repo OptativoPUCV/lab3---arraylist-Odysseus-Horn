@@ -26,6 +26,7 @@ void append(ArrayList * l, void * data){
   if(l->capacity == l->size)
   {
     l->data = realloc(l->data, sizeof(void **) * 2);
+    printf("aumentando para ingresar %p\n", data);
     l->capacity *= 2;
   }
   
