@@ -245,3 +245,14 @@ Sat 01 Apr 2023 03:21:19 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 7310391
+Sat 01 Apr 2023 03:52:26 PM UTC: 
+ arraylist.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:42:47: error: expected ‘)’ before ‘l’
+   42 |     l->data = realloc(l->data, sizeof(void **) l->capacity * 2);
+      |                      ~                        ^~
+      |                                               )
+Compilation failed
+377fdba
