@@ -80,7 +80,7 @@ void* get(ArrayList * l, int i){
     if(i < 0)
     {
       i = l->size + i;
-    }=
+    }
   
     return l->data[i];
 }
